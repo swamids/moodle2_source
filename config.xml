@@ -2,17 +2,17 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "com.smart.smartapp"
         versionCode = "2010"
-        version   = "2.9">
-    <name>Moodle Mobile</name>
+        version   = "1.0">
+    <name>Smart LMS</name>
 
     <description>
-        Moodle Mobile official app
+        SMART Training resources official mobile app
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Pty Ltd
+    <author href="http://smartindia.co.in" email="venkat@smartindia.co.in">
+        Venkat
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
@@ -33,7 +33,7 @@
 
     <allow-intent href="*" />
 
-    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
@@ -116,14 +116,11 @@
     <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 
-    <gap:plugin name="com.phonegap.plugins.pushplugin" />
-    <gap:plugin name="net.tunts.webintent" />
     <gap:plugin name="cordova-plugin-customurlscheme" source="npm">
         <param name="URL_SCHEME" value="moodlemobile" />
     </gap:plugin>
     <gap:plugin name="ionic-plugin-keyboard" source="npm" />
     <gap:plugin name="cordova-plugin-local-notifications-mm" source="npm" />
-    <gap:plugin name="ch.ti8m.documenthandler" version="0.2.1" />
     <gap:plugin name="cordova-plugin-zip" source="npm" />
 
     <gap:config-file platform="android" parent="/manifest">
